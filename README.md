@@ -13,6 +13,7 @@ An asynchronous Python library to search for YouTube videos and retrieve detaile
 
 ## Installation
 Ensure you have Python 3.7 or higher installed.
+```
 
 1. Clone the repository:
    ```bash
@@ -29,7 +30,7 @@ Ensure you have Python 3.7 or higher installed.
 
 ```python
 import asyncio
-from youtube_search import YoutubeSearch
+from async_youtube_search import AsyncYoutubeSearch
 
 async def main():
     # Create an instance of YoutubeSearch
