@@ -33,8 +33,8 @@ import asyncio
 from async_youtube_search import AsyncYoutubeSearch
 
 async def main():
-    # Create an instance of YoutubeSearch
-    search = YoutubeSearch("rafkix", max_results=5)
+    # Create an instance of AsyncYoutubeSearch
+    search = AsyncYoutubeSearch("rafkix", max_results=5)
 
     # Fetch video results
     await search.fetch_results()
