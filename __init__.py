@@ -4,7 +4,7 @@ import urllib.parse
 import json
 
 
-class YoutubeSearch:
+class AsyncYoutubeSearch:
     def __init__(self, search_terms: str, max_results=None):
         self.search_terms = search_terms
         self.max_results = max_results
@@ -74,13 +74,6 @@ class YoutubeSearch:
         if clear_cache:
             self.videos = []
         return result
-
-
-# Usage example
-async def main():
-    search = YoutubeSearch("rafkix", max_results=5)
-    await search.fetch_results()
-    print(search.to_dict())
 
 # Run the script
 asyncio.run(main())
